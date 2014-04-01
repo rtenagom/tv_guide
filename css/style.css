@@ -1,0 +1,205 @@
+html, body {
+	height:100%;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	padding: 5px;
+	width:100%;
+}
+
+td {
+	padding: 0!important;
+	margin: 0;
+	border: 1px solid #BCBCBC;
+	background-color: #EFEFEF;
+}
+
+tr {
+	
+}
+
+h1 {
+	padding: 0 2%;
+	background-color: #111111;
+	color: #FFF!important; 
+	float:left;
+}
+
+p {
+	font-size: 12px;
+}
+
+legend {
+	font-size: 28px!important;
+	border-bottom: 2px solid #2D6CC5!important;
+}
+
+#topbar {
+	display:block;
+	width: 100%;
+	background-color: #111111;
+	margin:0;
+	padding: 15px;
+	position: fixed;
+	z-index: 10;
+	box-shadow: 0 4px 4px rgba(34,25,25,0.6);
+}
+
+#redButton {
+	float: right;
+
+}
+
+#loadData {
+	float: right;
+	margin: 1%;
+	margin-right: 3%;
+}
+
+#upcomingEpisodes{
+	opacity: 0;
+	-webkit-transition: opacity 1.2s ease-out 0.3s;
+	-moz-transition:  opacity 1.2s ease-out 0.3s;
+	-ms-transition:  opacity 1.2s ease-out 0.3s;
+	-o-transition:  opacity 1.2s ease-out 0.3s;
+	transition:  opacity 1.2s ease-out 0.3s;
+	
+	padding-top: 130px;
+}
+
+#interestingShows{
+	opacity: 0;
+	-webkit-transition: opacity 1.2s ease-out 0.7s;
+	-moz-transition:  opacity 1.2s ease-out 0.7s;
+	-ms-transition:  opacity 1.2s ease-out 0.7s;
+	-o-transition:  opacity 1.2s ease-out 0.7s;
+	transition:  opacity 1.2s ease-out 0.7s;
+	
+	position:fixed;	
+	height: 100%;
+	overflow-y:scroll;
+	padding-top: 130px;
+}
+
+.allcontent {
+	
+}
+
+.btn {
+	outline: 0!important;
+}
+
+.episodes {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	position: relative;
+	max-width:100%;
+	height:auto;
+	max-height: 200px;
+}
+
+.block {
+	padding: 20px;
+}
+
+.ishows {
+	display:block;
+	padding: 0 20px;
+	padding-bottom: 10px;
+	margin: 10px 0;
+	border: 1px solid #9e9c9c;
+	background-color: #c9e7ff;
+	border-radius: 5px;
+	width:100%;
+}
+
+.posterimg {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.desc {
+	text-align: justify;
+}
+
+.logo {
+	float:left;
+}
+
+@keyframes tvguide {
+	0% { 
+		transform: scale(0.8,0.8);
+		-o-transform: scale(0.8,0.8);
+		-ms-transform: scale(0.8,0.8);
+	}
+	5% { 
+		transform: scale(1.3,1.3);
+		-o-transform: scale(1.3,1.3);
+		-ms-transform: scale(1.3,1.3);
+	}
+	10% {
+		transform: rotateX(180deg) scale(1.3,1.3);
+		-o-transform: rotateX(180deg) scale(1.3,1.3);
+		-ms-transform: rotateX(180deg) scale(1.3,1.3);
+	}
+	15% {
+		transform: rotateX(360deg) scale(1.3,1.3);
+		-o-transform: rotateX(360deg) scale(1.3,1.3);
+		-ms-transform: rotateX(360deg) scale(1.3,1.3);
+	}
+	20% { 
+		transform: rotateX(360deg) scale(0.8,0.8);  
+		-o-transform: rotateX(360deg) scale(0.8,0.8);  
+		-ms-transform: rotateX(360deg) scale(0.8,0.8);  
+	}
+	100% { 
+		transform: rotateX(360deg) scale(0.8,0.8);  
+		-o-transform: rotateX(360deg) scale(0.8,0.8); 
+		-ms-transform: rotateX(360deg) scale(0.8,0.8); 
+	}
+}
+
+@-webkit-keyframes tvguide {
+	0% { 
+		-webkit-transform: scale(0.8,0.8);
+	}
+	5% { 
+		-webkit-transform: scale(1.3,1.3);
+	}
+	10% {
+		-webkit-transform: rotateX(180deg) scale(1.3,1.3);
+	}
+	15% {
+		-webkit-transform: rotateX(360deg) scale(1.3,1.3);
+	}
+	20% { 
+		-webkit-transform: rotateX(360deg) scale(0.8,0.8);  
+	}
+	100% { 
+		-webkit-transform: rotateX(360deg) scale(0.8,0.8);  
+	}
+}
+
+#logo {
+	position:relative;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+}
+
+#logo2 {
+	position:relative;
+	animation-name: tvguide;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	transform-style: preserve-3d;
+	
+	-webkit-animation-name: tvguide;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 6s;
+	-webkit-transform-style: preserve-3d;
+}
